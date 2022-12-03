@@ -1,0 +1,188 @@
+/** @format */
+@import "../../styles/styles.scss";
+
+.header {
+	width: 100%;
+	position: fixed;
+	height: 5rem;
+	z-index: 100;
+	@include font-family-normal;
+	background-color: $c-new-back-ground-color;
+	@include flex-space-bteween;
+	padding: $p-base;
+	@include laptop-query {
+		@include flex-space-bteween;
+	}
+	&-toggle {
+		width: 2rem;
+		@include flex-center;
+		@include laptop-query {
+			display: none;
+		}
+		&__btn {
+			@include flex-center;
+			border: none;
+			width: 35px;
+			height: 36px;
+			padding: 0;
+			background-color: $c-new-back-ground-color;
+			cursor: pointer;
+			@include laptop-query {
+				display: none;
+			}
+			&-burger {
+				padding: 0;
+				margin: 0;
+				position: relative;
+				width: 17px;
+				height: 2px;
+				background-color: $c-deep-red;
+				transition: all 0.5s ease;
+			}
+			&-burger::before,
+			::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 17px;
+				height: 2px;
+				background-color: $c-deep-red;
+				box-shadow: 0 2px 5px rbga(255, 101, 47, 0.2);
+			}
+			&-burger::before {
+				transform: translateY(-5px);
+			}
+			&-burger::after {
+				transform: translateY(5px);
+			}
+		}
+	}
+	&__link {
+		padding: 0;
+		margin: 0;
+		color: $c-dark-desaturated-blue;
+		font-weight: 900 !important;
+		text-transform: capitalize;
+		text-decoration: none;
+		color: $c-deep-red;
+	}
+	&__logo {
+		margin: 0;
+		padding: 0;
+		width: 166px;
+		text-align: center;
+	}
+}
+.header__toggle__btn__open {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 17px;
+	height: 2px;
+	background-color: $c-deep-red;
+	transition: all 0.5s ease;
+	transform: translateX(-50px);
+}
+.header__toggle__btn__open::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	height: 2px;
+	background: $c-deep-red;
+	background-color: $c-deep-red;
+	transition: all 0.5s ease-in-out;
+	transform: rotate(45deg) translate(35px, -35px);
+}
+.header__toggle__btn__open::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 17px;
+	height: 2px;
+	background-color: $c-deep-red;
+	box-shadow: 0 2px 5px rbga(255, 101, 47, 0.2);
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav {
+	@include font-family-normal;
+	width: 70%;
+	height: 100vh;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: 0;
+	font-weight: 900;
+	list-style: none;
+	flex-direction: column;
+	padding-top: $p-base * 6;
+	background-color: $c-new-back-ground-color;
+	z-index: 10;
+	padding: 1rem;
+	// transform: translateX(-100%);
+	transition: transform 0.5s ease-in-out;
+	@include laptop-query {
+		padding: 0;
+		position: static;
+		width: 35.25rem;
+		height: 3.75rem;
+		@include flex-end;
+		flex-direction: row;
+		transform: none;
+		transition: none;
+		&-list {
+			font-weight: $fw-black;
+			padding: $p-base;
+			margin-top: $m-base;
+			margin: 0;
+			width: 120px;
+			margin-top: 3rem;
+			padding: 0;
+			@include laptop-query {
+				margin: 0;
+				text-align: center;
+				flex-direction: row;
+			}
+			&__link {
+				font-size: 0.7rem;
+				letter-spacing: 1.5px;
+				color: $c-banana-sim-black;
+				font-family: $fw-black;
+				text-transform: uppercase;
+				text-decoration: none;
+				position: relative;
+				padding: $p-base 0;
+				&:hover {
+					color: $c-deep-red;
+				}
+				@include laptop-query {
+					padding: $p-base * 1.96 0;
+				}
+			}
+			&__link::after {
+				content: "";
+				width: 100%;
+				height: 2.16px;
+				background-color: $c-deep-red;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transform: scaleX(0);
+				transition: transform ease-in;
+				transition: transform 0.5s;
+			}
+			&__link:hover::after {
+				transform: scaleX(1);
+			}
+			&__link:active {
+				color: $c-deep-red;
+			}
+		}
+	}
+}

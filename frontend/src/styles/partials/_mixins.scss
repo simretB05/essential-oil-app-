@@ -1,0 +1,103 @@
+/*******************
+* MEDIA QUERIES
+********************/
+@import "../partials/typography" ;
+@import "../partials/variables" ;
+
+// @mixin min-query($device-size) {
+//     @media screen and (min-width: $device-size) {
+//         // @content;
+//     }
+// }
+@mixin tablet-query{
+	@media screen  and (min-width:$d-tablet){
+		@content;
+	}
+}
+
+@mixin laptop-query{
+	@media screen  and (min-width:$d-laptop){
+		@content;
+	}
+}
+
+@mixin laptop-l-query{
+	@media screen  and (min-width:$d-laptop-l){
+		@content;
+	}
+}
+// font face mixins
+
+@mixin font-family-normal {
+    font-family: "Kumbh Sans";
+    @content;
+}
+
+
+@mixin font-family-bold {
+    font-family: "Avenir";
+    font-weight: 600;
+    font-style: normal;
+    @content;
+
+}
+
+
+@mixin font-family-bolder {
+    font-family: "Avenir";
+    font-weight: 700;
+    font-style: normal;
+    @content;
+
+}
+
+ @mixin  container {
+    padding: 2rem;
+    margin: auto;
+ }
+  @mixin paperStyleShadow{
+    background-color: transparent;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid $c-white;
+  }
+  @mixin shadow {
+    background-color: #f7f7f7;
+    box-shadow: 0 1rem 4rem rgb(0 0 0 / 20%);
+    
+  }
+    @mixin flex-space-bteween {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+    }
+ 
+    @mixin flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    @mixin flex-start {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      
+    }
+    @mixin flex-end {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      
+    }
+    @mixin flex-evenly {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      
+    }
+    @mixin flex-around {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }

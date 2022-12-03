@@ -1,0 +1,25 @@
+
+@import './partials/colors';
+@import './partials/typography';
+@import'./partials/mixins';
+@import'./partials/variables';
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+position: relative;
+ font-family: 'Kumbh'; 
+    
+}
+body.modal{
+    height: 100vh;
+    overflow-y: hidden;
+  }
+.content{
+    padding: $p-base*5 0 0 0;
+    min-height: 100%;
+  }

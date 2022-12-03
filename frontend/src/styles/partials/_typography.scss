@@ -1,0 +1,56 @@
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+// @font-face {
+//   font-family: "Avenir";
+//   src: url("./../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+//   // src: url(../../assets/fonts/alternative/AvenirNextLTPro.ttf) format("truetype");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+
+// @font-face {
+//   font-family: "Avenir";
+//   src: url(../../assets/fonts/AvenirNextLTPro-Demi.otf) format("opentype");
+//   // src: url(../../assets/fonts/alternative/AvenirNextLTProDemi.ttf) format("truetype");
+
+//   font-weight: 600;
+//   font-style: normal;
+// }
+// @font-face{
+// font-family:"satisfy-Regular";
+// src: url(../../../assets/fonts/Satisfy-Regular.ttf);
+// font-weight:normal ;
+// font-weight: 700;
+// }
+
+// @font-face {
+//   font-family: "Avenir";
+//   src: url(../../../assets/fonts/AvenirNextLTPro-Bold.otf) format("opentype");
+//   // src: url(../../assets/fonts/alternative/AvenirNextLTProBold.ttf) format("truetype");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+// $ff-Roboto: font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+
+@font-face {
+  font-family: 'Kumbh';
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+// /***********************
+// * TYPOGRAPHY
+// ************************/
+$fw-semi-bold: 600;
+$fw-normal: 300;
+$fw-bold: 700;
+$fw-black: 900;
