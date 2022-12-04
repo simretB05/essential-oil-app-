@@ -1,0 +1,33 @@
+/** @format */
+
+@import "../../styles/styles.scss";
+
+.products {
+	margin: $m-base * 2 auto;
+	width: 70%;
+	position: relative;
+	display: flex;
+	&__title {
+		@include font-family-normal;
+		font-weight: $fw-bold;
+		margin: 0;
+		font-size: 1.7rem;
+		color: $c-deep-red;
+		&::before {
+			content: "";
+			position: absolute;
+			background-color: $c-deep-red;
+			display: block;
+			height: 1px;
+			width: 100%;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: $c-deep-red;
+			display: block;
+			height: 1px;
+			width: 100%;
+		}
+	}
+}

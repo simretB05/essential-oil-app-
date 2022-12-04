@@ -1,9 +1,12 @@
 /** @format */
 
 import React from "react";
-
-function Contact() {
-	return <div>Contact</div>;
-}
-
+import ContactHero from "../components/contact-hero/contact-hero";
+const Contact = () => (
+	<>
+		<section className="content">
+			<ContactHero />
+		</section>
+	</>
+);
 export default Contact;

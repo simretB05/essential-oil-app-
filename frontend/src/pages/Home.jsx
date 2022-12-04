@@ -1,9 +1,12 @@
 /** @format */
 
 import React from "react";
+import Hero from "../components/main-hero/mainHero";
 
-function Home() {
-	return <div>Home</div>;
-}
+const Home = () => (
+	<>
+		<Hero />
+	</>
+);
 
 export default Home;

@@ -1,8 +1,12 @@
 /** @format */
 import React from "react";
+import AboutHero from "../components/about-page/aboutHero";
 
-function about() {
-	return <div>about</div>;
-}
-
-export default about;
+const About = () => (
+	<>
+		<section>
+			<AboutHero />
+		</section>
+	</>
+);
+export default About;

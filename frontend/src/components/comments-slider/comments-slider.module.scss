@@ -1,0 +1,147 @@
+@import "../../styles/styles.scss";
+
+.testimonials__main{
+  color :$c-white;
+  @include flex-around ;
+  flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)),
+    url(../../../public/assets/images/images23.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+  
+    &__title{
+      @include font-family-normal;
+      text-align: center;
+      font-size: 1.9rem;
+      position: relative;
+      padding-bottom: .51rem;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: rgb(241, 241, 233);
+        display: block;
+        height: 3px;
+        width: 10rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 1rem auto 0;
+      }
+      @include tablet-query{
+        width: 60%;
+        font-size: 1.9rem;
+      }
+      @include laptop-query{
+        width: 60%;
+        font-size: 2.1rem;
+      }
+      @include laptop-l-query{
+        width: 60%;
+        font-size: 2.4rem;
+      }
+    }
+    &__btn{
+      @include paperStyleShadow;
+      border: 1px solid $c-white;
+      color:$c-white;
+      padding: .5rem;
+      border-radius: .6rem;
+      background-color:$c-deep-red ;
+      margin: $m-base 0;
+      &:hover{
+        background-color: $c-light-body;
+
+      }
+     
+    }
+  }
+
+
+.testimonials{
+    width: 100%;
+    @include flex-center;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+   
+    &__nav{ 
+      width: 60%;
+      height: 90px;
+      @include  flex-space-bteween;
+      z-index: 0;
+      position: absolute;
+      top: 0%;
+      @include tablet-query{
+        width: 50%;
+
+      }
+      @include laptop-query{
+        width: 40%;
+
+      }
+      @include laptop-query{
+        width: 20%;
+
+      }
+  &__btn{
+    @include flex-center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    &:hover{
+      background-color: $c-light-body;
+
+    }
+  }
+
+}
+    }
+.testimonials__section{
+  display: flex;
+  flex-direction: row;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+.testimonials__card{
+  width: 100%;
+  margin: 0 auto;
+  @include flex-center;
+  flex-direction: column;
+  flex: 1 0 100%;
+  // transform: translateX(-500px);
+  // display: none;
+&__holder{
+@include flex-space-bteween;
+flex-direction: column;
+padding: 1rem;
+height: 12rem;
+@include font-family-normal;
+text-align: center;
+
+
+&__img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%
+}
+&__name{
+  font-size: 1rem;
+}
+&__copy{
+  color: $c-white;
+  text-align: center;
+  font-size: .821rem;
+  @include tablet-query{
+    width: 76%;
+    font-size: .9rem;
+
+  }
+
+
+}
+}
+}

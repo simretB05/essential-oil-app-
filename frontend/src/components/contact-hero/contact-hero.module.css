@@ -1,0 +1,243 @@
+/**
+ * ********************
+ * COLORS
+ * **********************
+ *
+ * @format
+ */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/*******************
+* MEDIA QUERIES
+********************/
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Kumbh";
+}
+
+body.modal {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.content {
+  padding: 5rem 0 0 0;
+  min-height: 100%;
+}
+
+.form__container {
+  font-family: "Kumbh Sans";
+  padding: 2rem 0;
+  background-color: hsl(0deg, 0%, 96.86%);
+}
+@media screen and (min-width: 1020px) {
+  .form__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.form__container__title {
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.4rem;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1020px) {
+  .form__container__title {
+    margin: 0 auto;
+  }
+}
+.form__container__title::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  display: block;
+  height: 1px;
+  width: 80%;
+}
+.form__container__title::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  display: block;
+  height: 1px;
+  width: 80%;
+}
+.form__container__copy {
+  width: 90%;
+  font-size: 0.91rem;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(110, 108, 108);
+  letter-spacing: 0.5px;
+  margin: 3rem auto 4rem;
+}
+@media screen and (min-width: 768px) {
+  .form__container__mainContent {
+    display: flex;
+  }
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.form__input__box {
+  padding: 1rem 0;
+}
+.form__input__text {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: hsl(0deg, 0%, 93.33%);
+  border: none;
+  color: rgb(110, 108, 108);
+}
+.form__message__box {
+  display: flex;
+  flex-direction: column;
+}
+.form__input__textArea {
+  padding: 0.8rem;
+  background-color: hsl(0deg, 0%, 93.33%);
+  border: none;
+  resize: none;
+  outline: none;
+}
+.form__submit__btn {
+  width: 100px;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid hsl(0deg, 0%, 100%);
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  padding: 0;
+  text-transform: capitalize;
+  border: none;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  padding: 0.6rem 0.6rem;
+}
+.form__submit__btn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  border: 2px solid hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+
+.address {
+  width: 90%;
+  margin: 0 auto;
+}
+.address__title {
+  font-size: 1.5rem;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+.address__list {
+  padding: 0;
+  list-style: none;
+}
+.address__list__item {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.address__list__item__icon {
+  width: 1.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  height: 29px;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+}
+.address__list__item__copy {
+  font-size: 0.91rem;
+  font-weight: 300;
+  color: rgb(110, 108, 108);
+  letter-spacing: 0.5px;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.address__list__item__title {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.fa-phone, .fa-location-arrow, .fa-envelope {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.location {
+  width: 80%;
+  margin: 0 auto;
+}
+.location__title {
+  text-align: center;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+.location__card {
+  width: 100%;
+}
+.location__card__img {
+  width: 100%;
+}/*# sourceMappingURL=contact-hero.module.css.map */

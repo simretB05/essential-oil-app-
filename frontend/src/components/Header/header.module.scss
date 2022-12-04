@@ -125,7 +125,7 @@
 	background-color: $c-new-back-ground-color;
 	z-index: 10;
 	padding: 1rem;
-	// transform: translateX(-100%);
+	transform: translateX(-100%);
 	transition: transform 0.5s ease-in-out;
 	@include laptop-query {
 		padding: 0;

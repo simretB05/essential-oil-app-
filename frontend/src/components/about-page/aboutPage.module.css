@@ -1,0 +1,177 @@
+/**
+ * ********************
+ * COLORS
+ * **********************
+ *
+ * @format
+ */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/*******************
+* MEDIA QUERIES
+********************/
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Kumbh";
+}
+
+body.modal {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.content {
+  padding: 5rem 0 0 0;
+  min-height: 100%;
+}
+
+.about {
+  width: 90%;
+  font-family: "Kumbh Sans";
+  margin: 0 auto;
+}
+.about__main {
+  width: 100%;
+}
+.about__main__img {
+  width: 100%;
+}
+.about__discription {
+  width: 100%;
+  margin: 0 auto;
+}
+.about__discription__title {
+  width: 90%;
+  font-size: 1.5rem;
+  padding: 4rem 0;
+  text-transform: capitalize;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+.about__discription__title::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  display: block;
+  height: 1px;
+  width: 90%;
+}
+.about__discription__title::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  display: block;
+  height: 1px;
+  width: 90%;
+}
+.about__discription__body {
+  width: 90%;
+  font-size: 0.91rem;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(110, 108, 108);
+  letter-spacing: 0.5px;
+  margin: 3rem auto 4rem;
+}
+.about__card {
+  margin: 0 auto;
+  width: 90%;
+  margin: 3rem auto;
+  border: 1px solid hsl(357.84deg, 88.99%, 42.75%);
+}
+@media screen and (min-width: 768px) {
+  .about__card {
+    display: flex;
+    width: 100%;
+  }
+}
+.about__mainCard {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about__mainCard {
+    flex: 0 0 31%;
+    padding: 0 1rem;
+    height: 25rem;
+    margin: 1rem auto 1rem;
+  }
+}
+.about__mainCard__title {
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+.about__mainCard__copy {
+  width: 100%;
+  font-size: 0.91rem;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(110, 108, 108);
+  letter-spacing: 0.5px;
+  margin: 3rem auto 4rem;
+}
+.about__mainCard__btn {
+  border-radius: 0.3rem;
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  padding: 0;
+  text-transform: capitalize;
+  border: 1px solid;
+  background-color: transparent;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+  cursor: pointer;
+  padding: 0.6rem 0.6rem;
+  width: 60%;
+}
+.about__mainCard__btn:hover {
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=aboutPage.module.css.map */

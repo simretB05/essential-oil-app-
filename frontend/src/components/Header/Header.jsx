@@ -57,8 +57,7 @@ function Header() {
 				</li>
 				<li className={classes["nav-list"]}>
 					<Link className={classes["nav-list__link"]} to="/login">
-						<FaSignInAlt />
-						Login
+						<FaSignInAlt /> Login
 					</Link>
 				</li>
 				<li className={classes["nav-list"]}>

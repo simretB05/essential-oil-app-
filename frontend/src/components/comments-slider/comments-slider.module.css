@@ -1,0 +1,232 @@
+/**
+ * ********************
+ * COLORS
+ * **********************
+ *
+ * @format
+ */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;500;600&display=swap");
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/*******************
+* MEDIA QUERIES
+********************/
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Kumbh";
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kumbhsans/v11/c4mw1n92AsfhuCq6tVsaoIx1CHIi4kToNopqShNBVo0iPw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+/***********************
+* DEVICES
+************************/
+/***********************
+* COLUMN
+************************/
+/*******************
+* SPACING
+********************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Kumbh";
+}
+
+body.modal {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.content {
+  padding: 5rem 0 0 0;
+  min-height: 100%;
+}
+
+.testimonials__main {
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../../../public/assets/images/images23.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.testimonials__main__title {
+  font-family: "Kumbh Sans";
+  text-align: center;
+  font-size: 1.9rem;
+  position: relative;
+  padding-bottom: 0.51rem;
+}
+.testimonials__main__title::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(241, 241, 233);
+  display: block;
+  height: 3px;
+  width: 10rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 1rem auto 0;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__main__title {
+    width: 60%;
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .testimonials__main__title {
+    width: 60%;
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .testimonials__main__title {
+    width: 60%;
+    font-size: 2.4rem;
+  }
+}
+.testimonials__main__btn {
+  background-color: transparent;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  margin: 1rem 0;
+}
+.testimonials__main__btn:hover {
+  background-color: rgb(110, 108, 108);
+}
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+.testimonials__nav {
+  width: 60%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__nav {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .testimonials__nav {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .testimonials__nav {
+    width: 20%;
+  }
+}
+.testimonials__nav__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.testimonials__nav__btn:hover {
+  background-color: rgb(110, 108, 108);
+}
+
+.testimonials__section {
+  display: flex;
+  flex-direction: row;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.testimonials__card {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 100%;
+}
+.testimonials__card__holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem;
+  height: 12rem;
+  font-family: "Kumbh Sans";
+  text-align: center;
+}
+.testimonials__card__holder__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.testimonials__card__holder__name {
+  font-size: 1rem;
+}
+.testimonials__card__holder__copy {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  font-size: 0.821rem;
+}
+@media screen and (min-width: 768px) {
+  .testimonials__card__holder__copy {
+    width: 76%;
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=comments-slider.module.css.map */

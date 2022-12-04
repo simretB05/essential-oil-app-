@@ -1,0 +1,102 @@
+@import "../../styles/styles.scss";
+
+.about{
+  width: 90%;
+  @include font-family-normal;
+  margin: 0 auto;
+  &__main{
+      width: 100%;
+      &__img{
+          width: 100%;
+      }
+  }
+  &__discription{
+      width: 100%;
+      margin: 0 auto;
+      &__title{
+          width: 90%;
+          font-size: 1.5rem;
+          padding: 4rem 0;
+          text-transform: capitalize;
+          color: $c-deep-red;
+          &::before{
+              content: "";
+              position: absolute;
+              background-color: $c-deep-red;
+              display: block;
+              height: 1px;
+              width: 90%;
+               }
+            &::after{
+              content: "";
+              position: absolute;
+              background-color: $c-deep-red;
+              display: block;
+              height: 1px;
+              width: 90%;
+            
+            }
+      }
+      &__body{
+          width: 90%;
+          font-size: 0.91rem;
+          font-weight: 300;
+          text-align: center;
+          color: $c-light-body;
+          letter-spacing: 0.5px;
+          margin: $m-base*3 auto $m-base*4;
+      }
+  }
+  &__card{
+      margin: 0 auto;
+      width: 90%;
+      margin: $m-base*3 auto;
+      border: 1px solid $c-deep-red;
+      @include tablet-query{
+        display: flex;
+        width: 100%;
+    
+      }
+  }
+  &__mainCard{
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      @include tablet-query{
+          flex: 0 0 31%;
+          padding: 0 1rem;
+          height: 25rem;
+          margin: 1rem auto 1rem;
+      }
+      &__title{
+       color: $c-deep-red;
+      }
+      &__copy{
+          width: 100%;
+          font-size: 0.91rem;
+          font-weight: 300;
+          text-align: center;
+          color: $c-light-body;
+          letter-spacing: 0.5px;
+          margin: $m-base*3 auto $m-base*4;
+      }
+      &__btn{
+          border-radius: 0.3rem;
+          @include font-family-normal;
+          font-size: 12px;
+          padding: 0;
+          text-transform: capitalize;
+          border: 1px solid;
+          background-color: transparent;
+          color: $c-deep-red;
+          cursor: pointer;
+          padding: $p-base*.6 $p-base*.6;
+          width: 60%;
+          &:hover{
+              background-color: $c-deep-red;
+              color: $c-white;
+          }
+      }
+
+  }
+}

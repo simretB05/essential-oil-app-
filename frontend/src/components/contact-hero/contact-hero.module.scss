@@ -1,0 +1,171 @@
+@import "../../styles/styles.scss";
+
+
+.form__container{
+  @include font-family-normal;
+  padding: $p-base*2 0;
+  background-color: $c-light-gray-back;
+  @include laptop-query{
+  width: 100%;
+  margin: 0 auto;
+  }
+  &__title{
+      @include font-family-normal;
+      font-weight: $fw-bold;
+      margin: 0;
+      font-size: 1.4rem;
+      color: $c-deep-red;
+      width: 80%;
+      margin: 0 auto;
+      @include laptop-query{
+          margin: 0 auto ;
+      }
+      &::before{
+          content: "";
+          position: absolute;
+          background-color: $c-deep-red;
+          display: block;
+          height: 1px;
+          width: 80%;
+      }
+      &::after{
+          content: "";
+          position: absolute;
+          background-color: $c-deep-red;
+          display: block;
+          height: 1px;
+          width: 80%;
+      
+      }
+     
+  }
+  &__copy{
+      width: 90%;
+      font-size: 0.91rem;
+      font-weight: 300;
+      text-align: center;
+      color: $c-light-body;
+      letter-spacing: 0.5px;
+      margin: $m-base*3 auto $m-base*4;
+  
+  }
+  &__mainContent{
+      @include tablet-query{
+      display: flex;
+      }
+      
+  }
+}
+.form{
+  width: 80%;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding: $p-base  $p-base*2;
+
+  &__input__box{
+      padding:$p-base 0;
+  }
+  &__input__text{
+      width: 100%;
+      padding: $p-base*.8;
+      background-color: $c-light-dark-gray;
+      border: none;
+      color: $c-light-body;
+  }
+
+  &__message__box {
+      display: flex;
+      flex-direction: column;
+  }
+&__input__textArea{
+  padding: $p-base*.8;
+  background-color: $c-light-dark-gray;
+  border: none;
+  resize: none;
+  outline: none;
+}
+  &__input__text{
+  }
+  &__submit__btn {
+  width:100px;
+  border-radius: 0.3rem;
+  @include paperStyleShadow;
+  @include font-family-normal;
+  font-size: 12px;
+  padding: 0;
+  text-transform: capitalize;
+  border: none;
+  background-color: $c-deep-red;
+  color: $c-white;
+  cursor: pointer;
+  padding: $p-base*.6 $p-base*.6;
+
+  &:hover{
+      background-color: $c-white;
+      border:2px solid $c-deep-red;
+      color: $c-deep-red;
+  }
+}
+}
+.address{
+  width: 90%;
+  margin: 0 auto;
+  &__title{
+      font-size: 1.5rem;
+      color: $c-deep-red;
+  }
+  &__list{
+      padding: 0;
+      list-style: none;
+      &__item{
+          width: 100%;
+          display: flex;
+          font-size: 1rem;
+          justify-content: space-between;
+          // @include flex-center;
+          padding: $p-base 0;
+          &__icon{
+             width: 1.8125rem;
+              @include flex-center;
+              margin: 1rem;
+              height: 29px;
+              background-color: $c-deep-red;
+
+          }  
+          &__copy{     
+              font-size: 0.91rem;
+              font-weight: 300;
+              color: $c-light-body;
+              letter-spacing: 0.5px;
+              flex-direction: column;
+              padding: 0;
+              margin: 0;
+              width: 100%;
+          } 
+          &__title{
+              max-width: 100%;
+              padding: 0;
+              margin: 0;
+          }
+      }
+
+  }
+
+}
+.fa-phone,.fa-location-arrow,.fa-envelope{
+  color: $c-white;
+}
+.location{
+  width: 80%;
+  margin: 0 auto;
+  &__title{
+      text-align: center;
+      color: $c-deep-red;
+  }
+  &__card{
+      width: 100%;
+      &__img{
+width: 100%;
+      }
+  }
+}

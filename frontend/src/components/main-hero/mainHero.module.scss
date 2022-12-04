@@ -1,0 +1,318 @@
+@import "../../styles/styles.scss";
+
+.main{
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  
+
+}
+
+.main__hero{
+  margin: 0 auto;
+  position: relative;
+  top: 0%;
+}
+.hero__title{
+  @include font-family-normal;
+  width: 100%;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: $c-deep-red;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem auto;
+  position: relative;
+  padding-bottom:1rem ;
+
+&::after{
+      content: "";
+      position: absolute;
+      background-color: $c-deep-red;
+      display: block;
+      height: 3px;
+      width: 10rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 1rem auto 0;
+}
+}
+.hero__body{
+  @include font-family-normal;
+      width: 80%;
+      font-size: .91rem;
+      font-weight: $fw-normal;
+      text-align: center;
+      display: block;
+      color: $c-light-body;
+      letter-spacing: .5px;
+      margin: 0 auto 4rem;
+}
+.service{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  @include tablet-query{
+     max-width: 100%;
+  }
+  @include laptop-query{
+      max-width: 100%;
+      flex-wrap: nowrap;
+      margin-bottom: 3rem;
+@include laptop-l-query{
+  margin-bottom: 13rem;
+
+}
+  }
+}
+.service__card{
+  width: 100%;
+  padding: 0;
+ @include flex-center;
+  flex-direction: column;
+  flex: 0 0 100%;
+  height: 13rem;
+  margin-bottom: 2rem;
+  margin-right: 0;
+  background-color: $c-light-gray-back;
+  border-radius: .5rem;
+  // transform: scale(.9);//later
+  @include tablet-query{
+      flex: 0 0 48%;
+      padding: 0 1rem;
+      height: 15rem;
+      margin: 1rem auto 1rem;
+  }
+  @include laptop-query{
+    flex: 0 0 24%;
+    padding: 0 1rem;
+    height: 15rem;
+    margin: 1rem auto 1rem;
+}
+@include laptop-l-query{
+  flex: 0 0 24%;
+  padding: 0 1rem;
+  height: 15rem;
+  margin: 1rem auto 1rem;
+  &:nth-child(2){
+    transform:translateY(50px);
+}
+&:nth-child(3){
+    transform:translateY(100px);
+}
+&:nth-child(4){
+  transform:translateY(150px);
+}
+}
+  }
+.FontAwesomeIcon{
+  color: $c-deep-red;
+  padding: $p-base
+}
+.service__card__title{
+  @include font-family-normal;
+  text-transform:capitalize;
+  color:$c-light-body;
+}
+.service__card__body{
+  @include font-family-normal;
+  width: 70%;
+  width: 80%;
+  font-size: .91rem;
+  font-weight: $fw-normal;
+  text-align: center;
+  color: $c-light-body;
+  letter-spacing: .5px;
+}
+.type{
+  width: 90%;
+  margin:  0 auto;
+  background-color: $c-light-gray-back;
+  @include font-family-normal;
+  font-weight: $fw-normal;
+  // margin: $m-base*3 auto;
+  // padding: 0 1rem 0 1rem;
+  // @include flex-center;
+  // flex: 0 0 100%;
+  // flex-wrap: wrap;
+  
+  @include tablet-query{
+      display: flex;
+      flex-direction: row;
+  }
+  &__card{
+      background-color: $c-light-gray-back;
+      text-align: center;
+      width: 100%;  
+      height: 100%;
+      background-color: $c-light-gray-back;
+      @include flex-center;
+      flex-direction: column;
+      @include laptop-query{
+          width: 65%;
+          height: 23rem;
+          background-color: $c-light-gray-back;
+      }
+  &__img{
+      width: 100%;
+        height: 100%;
+  }
+  &__title{
+      font-weight: $fw-normal;
+      text-align: center;
+      padding: $p-base*2;
+      margin: 0 auto;
+      color: $c-deep-red;
+      font-family: $fw-bold;
+      font-size: 1.91rem;
+  }
+  &__copy{
+    padding: $p-base;
+      text-align: center;
+      text-align: center;
+      background-color: $c-light-gray-back;
+      letter-spacing: .5px;
+      font-size: .91rem;
+  }
+}
+}
+
+.card__container{
+  width: 100%;
+  padding: $p-base*2  $p-base;
+  @include tablet-query{
+      justify-content: center;
+      align-items: center;
+  }
+  @include laptop-query{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+}
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:0;
+  margin: $m-base*2 0;
+  position: relative;
+  min-height: 117.78px;
+  @include paperStyleShadow;
+  &:nth-child(odd){
+    background-color:$c-deep-red;
+
+   }
+  &:nth-child(even){
+    background-color: #6d6c6f;
+
+  }
+  &:hover{
+      filter: grayscale(0%);
+  }
+  @include tablet-query{
+      width: 75%;
+      margin: $m-base auto;
+  }
+  @include laptop-query{
+    width: 48%;
+      flex-direction: row-reverse;
+      &:nth-child(even){
+          flex-direction: row;
+      }
+  }
+  @include laptop-l-query{
+   width: 30%;
+
+}
+  &__img{
+  width: 100%;
+  max-height: 215.7px;
+  @include laptop-query{
+    width:47%;
+      margin: $m-base;
+  }
+  &:hover{
+      filter: grayscale(0%);
+  }
+}
+  &__body{
+    @include font-family-normal;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-height:100%;
+      width: 100%;
+      color: $c-white;
+      @include laptop-query{
+          height: 215.7px;
+          margin: $m-base;
+      }
+      &-title{
+          @include font-family-normal;
+          text-align: center;
+          margin: 0;
+          padding: $p-base*.5;
+      }
+      &-copy{
+          @include font-family-normal;
+          text-align: center;
+          padding: $p-base;
+          margin: 0;
+      }
+  }
+  &__btn__pure{
+      @include font-family-normal;
+      @include paperStyleShadow;
+      border: 1px solid $c-white;
+      border-radius: 8px;
+      padding:$p-base*.3 $p-base;
+      position: absolute;
+      top: 51%;
+      left: 7%;
+      display: block;
+      background-color:$c-deep-red;
+      color: $c-white;
+      text-transform: capitalize;
+      font-weight: $fw-bold;
+      z-index: 1;
+      @include laptop-query{
+        top: 76%;
+          left: 66%;  
+     }
+    }
+  &__btn__pure:hover{
+      color: $c-deep-red;
+      background-color: $c-new-back-ground-color;
+    }
+  &__btn__link__pure{
+      text-decoration: none;
+      color: $c-banana-sim-black;
+      text-transform: capitalize;
+  }
+}
+
+.card__btn__pure,.card__btn__lemon,.card__btn__thieves{
+  
+    // top: 76%;
+    //   left: 8%;  
+
+  @include laptop-query{
+    top: 76%;
+      left: 8%;  
+ }
+ @include laptop-l-query{
+  top: 78%;
+    left: 7%;
+}
+}
