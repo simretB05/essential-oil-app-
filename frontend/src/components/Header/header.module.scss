@@ -186,3 +186,10 @@
 		}
 	}
 }
+.nav-card {
+	display: flex;
+}
+.nav__cart {
+	background-color: $c-new-back-ground-color;
+	border: none;
+}

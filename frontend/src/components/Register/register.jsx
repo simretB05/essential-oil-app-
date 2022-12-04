@@ -1,8 +1,12 @@
 /** @format */
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaSignOut, FaUser } from "react-icons/fa";
 import classes from "../Register/register.module.scss";
 import { toast } from "react-toastify";
+import { useSelector, useDispatch } from "react-redux";
+import { registerUser, reset } from "../../features/auth/authSlice";
+
 function HomeRegister() {
 	const [formData, setFormData] = useState({
 		name: "",
@@ -13,6 +17,21 @@ function HomeRegister() {
 
 	const { name, email, password, password2 } = formData;
 
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+	const { user, isLoading, isSuccess, message, isError } = useSelector(
+		(state) => state.auth
+	);
+	useEffect(() => {
+		if (isError) {
+			toast.error(message);
+		}
+		//redirect when loagged in
+		if (isSuccess || user) {
+			navigate("/");
+		}
+		dispatch(reset());
+	}, [isError, isSuccess, user, message, navigate, dispatch]);
 	const onChange = (e) => {
 		setFormData((prevState) => ({
 			...prevState,
@@ -26,6 +45,13 @@ function HomeRegister() {
 
 		if (password !== password2) {
 			toast.error("passwords do not match");
+		} else {
+			const userData = {
+				name,
+				email,
+				password,
+			};
+			dispatch(registerUser(userData));
 		}
 	};
 

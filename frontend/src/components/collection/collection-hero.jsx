@@ -2,7 +2,7 @@
 
 import React from "react";
 import classes from "../collection/collection.module.scss";
-// import Review from "../reviwes/review";
+import Review from "../reviwes/review";
 import CollectionProducts from "../collections-product/collections-products";
 import data from "../data/data";
 
@@ -33,7 +33,7 @@ function CollectionHero() {
 				})}
 			</div>
 
-			{/* <Review productValue={products} /> */}
+			<Review productValue={products} />
 		</>
 	);
 }

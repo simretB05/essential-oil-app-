@@ -1,4 +1,4 @@
-/** @format */ /**
+/** @format */ /** @format */ /**
  * ********************
  * COLORS
  * **********************
@@ -72,4 +72,197 @@ body.modal {
 .content {
   padding: 5rem 0 0 0;
   min-height: 100%;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  max-width: 100%;
+  height: 249px;
+  padding: 1rem 0 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(26.67deg, 15.25%, 88.43%);
+  align-items: center;
+  color: hsl(357.84deg, 88.99%, 42.75%);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.footer__card {
+  position: relative;
+  background-color: hsl(13.85deg, 35.14%, 92.75%);
+  opacity: 0.6;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__card__title {
+  margin: 1rem;
+  font-size: 18px;
+  letter-spacing: 0.06rem;
+  font-weight: 700;
+}
+
+.form {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__input {
+  padding: 0 0.5rem;
+}
+.form__control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.5px solid hsl(357.84deg, 88.99%, 42.75%);
+}
+.form__btn {
+  padding: 0.5rem;
+  background-color: transparent;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid hsl(0deg, 0%, 100%);
+  background-color: hsl(357.84deg, 88.99%, 42.75%);
+  border-radius: 7px;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 0.06rem;
+  font-size: 12px;
+  font-weight: 700;
+}
+.form__btn:hover {
+  border: 0.9px solid hsl(13.85deg, 35.14%, 92.75%);
+  background-color: hsl(26.67deg, 15.25%, 88.43%);
+  color: hsl(357.84deg, 88.99%, 42.75%);
+}
+
+.footer__info {
+  text-transform: capitalize;
+  width: 90%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    height: 2rem;
+  }
+}
+
+.footer__services {
+  width: 10rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .footer__services {
+    width: 25rem;
+  }
+}
+.footer__services__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  align-items: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer__services__list {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.footer__services__list__item {
+  padding: 0.5rem 0;
+  letter-spacing: 0.04rem;
+}
+.footer__services__list__item:hover {
+  color: #0e0e0e;
+}
+@media screen and (min-width: 768px) {
+  .footer__services__list__item {
+    width: 12rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__iconLinks {
+    width: 8rem;
+  }
+}
+.footer__iconLinks__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .footer__iconLinks__list {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.footer__iconLinks__list__item {
+  letter-spacing: 0.04rem;
+}
+.footer__iconLinks__list__item:hover {
+  color: #0e0e0e;
+}
+@media screen and (min-width: 768px) {
+  .footer__iconLinks__list__item {
+    padding: 0.5rem 0;
+  }
+}
+.footer__iconLinks__list__facebookIcon {
+  width: 40px;
+  height: 17px;
+}
+.footer__iconLinks__list__twitter {
+  width: 40px;
+  height: 17px;
+}
+.footer__iconLinks__list__instagramIcon {
+  width: 40px;
+  height: 17px;
+}
+
+.footer__copyRight {
+  width: 100%;
+  height: 60px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__copyRight__text {
+  padding: 0.2rem;
+  font-size: 0.5rem;
+  text-align: left;
+  color: #0e0e0e;
+  opacity: 0.8;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyRight__text {
+    text-align: left;
+    font-size: 0.7rem;
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

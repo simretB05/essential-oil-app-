@@ -1,4 +1,4 @@
-/** @format */ /**
+/** @format */ /** @format */ /**
  * ********************
  * COLORS
  * **********************
@@ -291,4 +291,13 @@ body.modal {
   .nav-list__link:active {
     color: hsl(357.84deg, 88.99%, 42.75%);
   }
+}
+
+.nav-card {
+  display: flex;
+}
+
+.nav__cart {
+  background-color: hsl(26.67deg, 15.25%, 88.43%);
+  border: none;
 }/*# sourceMappingURL=header.module.css.map */

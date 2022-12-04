@@ -3,7 +3,7 @@
 import React from "react";
 import { useState } from "react";
 import classes from "../collections-product/collections-products.module.scss";
-// import Rating from '../rating';
+import Rating from "../rating";
 // import CartContextData from "../store/cart-context";
 // import formatCurrency from "format-currency";
 
@@ -31,10 +31,10 @@ function CollectionProducts({ product }) {
 					</div>
 					<div className={classes.product__card__container}>
 						<div className={classes.product__card__rating}>
-							{/* <Rating
+							<Rating
 								value={product.rating}
 								text={`${product.NumReviews} reviews`}
-							/> */}
+							/>
 						</div>
 						<table className={classes.product__card__table}>
 							<tbody className={classes.product__card__body}>
